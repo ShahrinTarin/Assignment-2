@@ -1,8 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+/* font-family: "Raleway", serif; */
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
+body{
+     font-family: "Quicksand", serif;
+     background-color: rgba(255, 242, 233, 0.123);
+}
+/* navbar starts here */
 .navbar{
+display: flex;
+justify-content: space-around;
+max-width: 1440px;
+align-items: center;
+margin: 0 auto;
+margin-top: 20px;
 
+}
+.school{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.school img{
+    width: 100%;
+}
+.nav-list ul{
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+.nav-list ul a{
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+.school h2{
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 30px;
+}
+.home{
+    color: #FEA301;
+   font-weight: bold;
+}
+.about{
+    color:#01ACFD;
+    font-weight: 500;
+}
+.facility{
+    color: #05D4DF;
+    font-weight: 500;
+}
+.admission{
+    color: #5D58EF;
+    font-weight: 500;
+}
+.nav-button{
+    padding: 10px 50px;
+    color:white ;
+    font-weight: 500;
+    font-size: 1.1rem;
+    background-color:  rgba(254, 163, 1, 1);
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+}
+.nav-button:hover{
+    background-color: black;
+}
+.bar{
+    display: none;
+}
+
+/* banner section starts here */
+.banner{
+    display: flex;
+    max-width: 1160px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.banner-img img{
+    width: 100%;
+}
+.banner h1{
+    font-weight: bold;
+    line-height: 60px;
+    font-size: 3rem;
+    color: black;
+}
+.empower{
+    color: rgba(254, 163, 1, 1);
+}
+/* for responsive */
+@media screen and (max-width: 576px) {
+    .bar{
+        display: flex;
+    }
+    .nav-list{
+        display: none;
+    }
+    .nav-button{
+        display: none;
+    }
+    .school{
+        gap: 5px;
+    }
+    .school img{
+        width: 80%;
+    }
+    .school h2{
+        display: none;
+    }
+    .navbar{
+        justify-content: space-between;
+        padding:0 20px;
+    }
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 992px){
+    .navbar{
+        flex-direction: column;
+        gap: 30px;
+    }
 }
