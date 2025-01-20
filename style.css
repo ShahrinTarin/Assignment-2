@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-/* font-family: "Raleway", serif; */
 *{
     margin: 0px;
     padding: 0px;
@@ -18,7 +17,6 @@ max-width: 1440px;
 align-items: center;
 margin: 0 auto;
 margin-top: 20px;
-
 }
 .school{
     display: flex;
@@ -81,9 +79,8 @@ margin-top: 20px;
     display: flex;
     max-width: 1160px;
     margin: 0 auto;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 50px;
 }
 .banner-img img{
     width: 100%;
@@ -93,9 +90,108 @@ margin-top: 20px;
     line-height: 60px;
     font-size: 3rem;
     color: black;
+    margin-bottom: 24px;
 }
 .empower{
     color: rgba(254, 163, 1, 1);
+}
+.vision{
+    color: rgba(1, 172, 253, 1);
+}
+.banner .banner-btn{
+    padding: 10px 45px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 0.85rem;
+    border: none;
+    border-radius: 12px;
+    margin-top: 24px;
+    cursor: pointer;
+}
+.banner .banner-btn:hover{
+    background-color: #FEA301;
+}
+
+/* curriculum starts here */
+
+.curriculum{
+    max-width: 1440px;
+    margin: 0px auto;
+    background-image: url("./assets/bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:center ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+padding: 20px;
+}
+.curriculum .standard{
+    font-size: 2.9rem;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 60px;
+}
+.card-box{
+    display: flex;
+    align-items:stretch;
+    justify-content: center;
+    gap: 28px;
+}
+.card{
+max-width:300px ;
+border-radius: 16px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items:center;
+gap: 30px;
+padding:  40px;
+text-align: center;
+box-shadow: 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05) inset ;
+
+}
+.card1{
+    background-image:linear-gradient(180.00deg,#DEF5FF -0.5%, #FFFFFF 60%) ;
+}
+.card2{
+    background-image: linear-gradient(180.00deg,#FFF4DC -0.5%, #FFFFFF 60%);
+}
+.card3{
+background-image: linear-gradient(180.00deg,#EEE1FF -0.5%,#FFFFFF 60%);
+}
+.card h1{
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #202020;
+    line-height: 30px;
+}
+.card img{
+    width: 30%;
+}
+.card p{
+    font-family: "Raleway", serif;
+    color: #808080;
+    font-size: 0.7rem;
+    font-weight: 500;
+    line-height: 20px;
+}
+.cardbtn1, .cardbtn2, .cardbtn3{
+background-color: #FFFF;
+border: none;
+font-size: 0.7rem;
+font-weight: bold;
+} 
+.cardbtn1{
+color: #64C8FF;
+}
+.cardbtn2{
+color: #F0AA00;
+}
+.cardbtn3{
+color: #8700FF;
 }
 /* for responsive */
 @media screen and (max-width: 576px) {
@@ -119,7 +215,19 @@ margin-top: 20px;
     }
     .navbar{
         justify-content: space-between;
-        padding:0 20px;
+        padding:0 15px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid rgba(254, 163, 1, 1);
+    }
+    .banner{
+        flex-direction: column-reverse;
+        padding: 10px;
+        text-align: center;
+        gap: 50px;
+    }
+    .banner-img img{
+        width: 90%;
+        
     }
 }
 
@@ -128,5 +236,11 @@ margin-top: 20px;
     .navbar{
         flex-direction: column;
         gap: 30px;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        padding: 10px;
+        text-align: center;
+        gap: 50px;
     }
 }
