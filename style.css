@@ -472,6 +472,7 @@ body {
     gap: 10px;
 }
 
+/* marquee styles starts here */
 marquee{
     font-size: 1.8rem;
     font-weight: bold;
