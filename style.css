@@ -366,6 +366,10 @@ color: #8700FF;
     .curriculum{
         margin-bottom: 20px;
     }
+    .curriculum .standard{
+        text-align: center;
+        font-size: 2.1rem;
+    }
     .card-box{
         flex-direction: column;
     }
